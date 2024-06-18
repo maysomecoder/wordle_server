@@ -13,7 +13,7 @@ import { WordModule } from './word/word.module';
   imports: [
     ConfigModule.forRoot({ envFilePath: '.production.env' }),
     MongooseModule.forRoot(
-      `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@wordle.wolqn9u.mongodb.net/?retryWrites=true&w=majority&appName=wordle`,
+      `mongodb+srv://maysomesugar:wordleproductionpassword@wordle.wolqn9u.mongodb.net/?retryWrites=true&w=majority&appName=wordle`,
     ),
     UserModule,
     AuthModule,
