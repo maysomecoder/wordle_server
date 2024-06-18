@@ -8,7 +8,7 @@ import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ envFilePath: '.development.env' }),
+    ConfigModule.forRoot({ envFilePath: '.production.env' }),
     MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
     JwtModule.register({ global: true, secret: process.env.JWT_SECRET }),
   ],

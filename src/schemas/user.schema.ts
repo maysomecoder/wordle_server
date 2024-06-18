@@ -25,7 +25,7 @@ export class User {
   @ApiProperty({
     type: Number,
     required: true,
-    description: 'Usern`s global score',
+    description: 'User`s global score',
   })
   @Prop({
     default: 0,

@@ -11,9 +11,9 @@ import { WordModule } from './word/word.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ envFilePath: '.development.env' }),
+    ConfigModule.forRoot({ envFilePath: '.production.env' }),
     MongooseModule.forRoot(
-      `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.bwlnh1k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`,
+      `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@wordle.wolqn9u.mongodb.net/?retryWrites=true&w=majority&appName=wordle`,
     ),
     UserModule,
     AuthModule,
